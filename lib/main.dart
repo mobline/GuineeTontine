@@ -23,13 +23,12 @@ class MyApp extends StatelessWidget {
         // Notice that the counter didn't reset back to zero; the application
         // is not restarted.
         useMaterial3: true,
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepOrange),   
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepOrange),
       ),
       home: const MyHomePage(title: 'Guinee Tontine'),
     );
   }
 }
-
 
 class MyHomePage extends StatefulWidget {
   const MyHomePage({super.key, required this.title});
@@ -98,7 +97,7 @@ class _MyHomePageState extends State<MyHomePage> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             const Text(
-              'La premiere version de Guinee Tontine:',
+              'La premiere version de Guinee:',
             ),
             Text(
               '$_counter',
@@ -112,7 +111,6 @@ class _MyHomePageState extends State<MyHomePage> {
         tooltip: 'Increment',
         child: const Icon(Icons.add),
       ), // This trailing comma makes auto-formatting nicer for build methods.
-     
     );
   }
 }
